@@ -1,0 +1,17 @@
+:root {
+    --mocha-mousse: #AS856F; /* Visily layout primary text/accents */
+    --ethereal-blue: #AOD4E0; /* Buttons or highlights */
+    --moonlit-grey: #F2FOEA; /* Backgrounds */
+}
+@media (min-width: 1024px) {
+    .app-layout {
+        display: grid;
+        grid-template-columns: 250px 1fr; /* Sidebar fixed width, main takes remaining space */
+        gap: 20px;
+    }
+    .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid elements automatically wrap */
+        gap: 15px;
+    }
+}
